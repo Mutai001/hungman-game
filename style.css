@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.word,
+.wrong-letters {
+    margin: 20px 0;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.word .letter {
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    width: 25px;
+    text-transform: uppercase;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.key {
+    padding: 15px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.key:hover {
+    background: #0056b3;
+}
+
+.notification-container,
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.notification-container.show,
+.popup-container.show {
+    display: flex;
+}
+
+.popup {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#final-message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#play-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#play-button:hover {
+    background: #218838;
+}
+
+canvas {
+    margin-top: 20px;
+    border: 1px solid #333;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
